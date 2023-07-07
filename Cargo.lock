@@ -242,8 +242,11 @@ version = "0.0.0"
 dependencies = [
  "anyhow",
  "crossbeam-channel",
+ "fs2",
  "once_cell",
  "serde",
+ "thiserror",
+ "toml 0.7.6",
 ]
 
 [[package]]
@@ -324,7 +327,7 @@ dependencies = [
  "lazycell",
  "log",
  "serde",
- "toml 0.7.5",
+ "toml 0.7.6",
  "toml_edit",
 ]
 
@@ -605,6 +608,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1"
 
 [[package]]
+name = "fs2"
+version = "0.4.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9564fc758e15025b46aa6643b1b77d047d1a56a1aea6e01002ac0c7026876213"
+dependencies = [
+ "libc",
+ "winapi",
+]
+
+[[package]]
 name = "funty"
 version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -627,7 +640,7 @@ dependencies = [
  "serde_yaml",
  "tempfile",
  "textwrap",
- "toml 0.7.5",
+ "toml 0.7.6",
 ]
 
 [[package]]
@@ -1555,7 +1568,7 @@ dependencies = [
  "serde",
  "substrate",
  "thiserror",
- "toml 0.7.5",
+ "toml 0.7.6",
  "tracing",
  "uniquify",
 ]
@@ -1740,9 +1753,9 @@ dependencies = [
 
 [[package]]
 name = "toml"
-version = "0.7.5"
+version = "0.7.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1ebafdf5ad1220cb59e7d17cf4d2c72015297b75b19a10472f99b89225089240"
+checksum = "c17e963a819c331dcacd7ab957d80bc2b9a9c1e71c804826d2f283dd65306542"
 dependencies = [
  "serde",
  "serde_spanned",
@@ -1761,9 +1774,9 @@ dependencies = [
 
 [[package]]
 name = "toml_edit"
-version = "0.19.11"
+version = "0.19.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "266f016b7f039eec8a1a80dfe6156b633d208b9fccca5e4db1d6775b0c4e34a7"
+checksum = "c500344a19072298cd05a7224b3c0c629348b78692bf48466c5238656e315a78"
 dependencies = [
  "indexmap",
  "serde",
