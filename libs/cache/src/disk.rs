@@ -5,6 +5,7 @@ use std::{
     fs::OpenOptions,
     io::{Read, Write},
     path::PathBuf,
+    time::Duration,
 };
 
 use fs2::FileExt;
@@ -59,9 +60,10 @@ impl DiskCache {
         manifest.lock_exclusive()?;
         let mut contents = String::new();
         manifest.read_to_string(&mut contents)?;
-        if let Err(_) = toml::from_str::<ManifestData>(&contents) {
-            manifest.write_all(&toml::to_string(&ManifestData::default())?.as_bytes())?;
+        if toml::from_str::<ManifestData>(&contents).is_err() {
+            manifest.write_all(toml::to_string(&ManifestData::default())?.as_bytes())?;
         }
+        std::thread::sleep(Duration::from_secs(10));
         Ok(())
     }
 }
@@ -72,7 +74,7 @@ mod tests {
 
     use super::DiskCache;
 
-    const BUILD_DIR: &str = concat!(env!("CARGO_MANIFEST_DIR"), "build");
+    const BUILD_DIR: &str = concat!(env!("CARGO_MANIFEST_DIR"), "/build");
 
     #[test]
     fn create_disk_cache_works() {
