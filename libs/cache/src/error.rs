@@ -7,5 +7,5 @@ pub enum Error {
     #[error(transparent)]
     Io(#[from] std::io::Error),
     #[error(transparent)]
-    Toml(#[from] toml::ser::Error),
+    Utf8(#[from] std::str::Utf8Error),
 }
