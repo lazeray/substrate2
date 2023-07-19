@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.2.0](https://github.com/substrate-labs/substrate2/compare/scir-v0.1.0...scir-v0.2.0) (2023-07-19)
+
+
+### Features
+
+* **cache:** implement persistent caching ([#171](https://github.com/substrate-labs/substrate2/issues/171)) ([1f8ea24](https://github.com/substrate-labs/substrate2/commit/1f8ea24f805085392bfd1a2067bb8774d0fa4ae4))
+* **merging:** add API for merging two SCIR libraries ([#183](https://github.com/substrate-labs/substrate2/issues/183)) ([a0006aa](https://github.com/substrate-labs/substrate2/commit/a0006aa4dbe62c2dda66eea306987e56eaabe181))
+* **scir-instances:** allow Substrate users to instantiate raw SCIR instances ([#184](https://github.com/substrate-labs/substrate2/issues/184)) ([8fd5192](https://github.com/substrate-labs/substrate2/commit/8fd5192fd2017ab04e9e3220612d0a132702bb2e))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * uniquify bumped from 0.1.0 to 0.2.0
+
 ## 0.1.0 (2023-07-07)
 
 

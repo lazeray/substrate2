@@ -4,6 +4,23 @@
   * dependencies
     * substrate bumped from 0.1.0 to 0.1.1
 
+## [0.3.0](https://github.com/substrate-labs/substrate2/compare/spectre-v0.2.0...spectre-v0.3.0) (2023-07-19)
+
+
+### Features
+
+* **cache:** implement persistent caching ([#171](https://github.com/substrate-labs/substrate2/issues/171)) ([1f8ea24](https://github.com/substrate-labs/substrate2/commit/1f8ea24f805085392bfd1a2067bb8774d0fa4ae4))
+* **executors:** executor API and local executor implementation ([#161](https://github.com/substrate-labs/substrate2/issues/161)) ([c372d51](https://github.com/substrate-labs/substrate2/commit/c372d511e1c67ad976dc86958c87e9ad13bdfde4))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * scir bumped from 0.1.0 to 0.2.0
+    * cache bumped from 0.1.0 to 0.2.0
+    * substrate bumped from 0.2.0 to 0.3.0
+
 ## [0.2.0](https://github.com/substrate-labs/substrate2/compare/spectre-v0.1.1...spectre-v0.2.0) (2023-07-07)
 
 

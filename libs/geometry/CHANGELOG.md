@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/substrate-labs/substrate2/compare/geometry-v0.2.0...geometry-v0.3.0) (2023-07-19)
+
+
+### Features
+
+* **proc-macros:** derive macros for geometry traits ([#164](https://github.com/substrate-labs/substrate2/issues/164)) ([a86074a](https://github.com/substrate-labs/substrate2/commit/a86074a69b714b1be551ae00c775beb04c13f776))
+
 ## [0.2.0](https://github.com/substrate-labs/substrate2/compare/geometry-v0.1.0...geometry-v0.2.0) (2023-07-07)
 
 
